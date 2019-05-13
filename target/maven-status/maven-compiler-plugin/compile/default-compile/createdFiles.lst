@@ -1,9 +1,9 @@
-configs\SpringWebAppInitializer.class
-configs\WebMvcConfig.class
-testHibernate\model\Person.class
-testHibernate\controller\HelloSpringMVC.class
-testHibernate\config\HibernateConfig.class
 Main.class
-testHibernate\dao\PersonDAO.class
-configs\AppConfiguration.class
+configs\WebMvcConfig.class
 testHibernate\jdbc\JDBCExample.class
+configs\AppConfiguration.class
+testHibernate\controller\HelloSpringMVC.class
+testHibernate\dao\PersonDAO.class
+configs\SpringWebAppInitializer.class
+testHibernate\config\HibernateConfig.class
+testHibernate\model\Person.class

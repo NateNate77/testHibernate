@@ -7,6 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import testHibernate.jdbc.JDBCExample;
+import testHibernate.model.Person;
+
+import java.util.List;
 //import service.PersonService;
 
 @Controller
@@ -27,10 +30,11 @@ public class HelloSpringMVC {
     @RequestMapping(method = RequestMethod.GET)
     public String hello(Model model) {
 
-//        model.addAttribute("greeting", "Hello Spring MVC");
+        model.addAttribute("greeting", "Hello Spring MVC");
 //        model.addAttribute("persons", personService.getAllUsers() );
         try {
-            model.addAttribute("persons", personDAO.getAllPersons());
+            List<Person> list = personDAO.getAllPersons();
+            model.addAttribute("persons", list);
         } catch (Exception e) {
             e.printStackTrace();
         }

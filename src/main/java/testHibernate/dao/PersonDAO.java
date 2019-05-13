@@ -44,16 +44,16 @@ public class PersonDAO {
 //    @Transactional(readOnly = true)
     public List<Person> getAllPersons() throws SQLException, Exception {
 
-//        em.createNativeQuery("create table if not exists person\n" +
-//                "(\n" +
-//                "   id integer not null,\n" +
-//                "   name varchar(255) not null,\n" +
-//                "   primary key(id)\n" +
-//                ");").executeUpdate();
-//
-//        em.createNativeQuery("INSERT INTO person (id, first_name, last_name) VALUES (?,?)")
-//                .setParameter(1, 10001)
-//                .setParameter(2, "Renn").executeUpdate();
+        em.createNativeQuery("create table if not exists person\n" +
+                "(\n" +
+                "   id integer not null,\n" +
+                "   name varchar(255) not null,\n" +
+                "   primary key(id)\n" +
+                ");").executeUpdate();
+
+        em.createNativeQuery("INSERT INTO person (id, name) VALUES (?,?)")
+                .setParameter(1, 10001)
+                .setParameter(2, "Renn").executeUpdate();
 
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Person> q = cb.createQuery(Person.class);

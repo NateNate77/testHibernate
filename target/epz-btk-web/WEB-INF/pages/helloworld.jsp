@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Chekireva
@@ -12,17 +13,23 @@
 
 </head>
 <body>
-<%--<h1>${greeting}</h1>--%>
+<h1>${greeting}</h1>
 
 <table>
     <c:forEach var="person" items="${persons}">
         <tr>
-            <td>
-                <c:out value="${person.id}"/>
-            </td>
-            <td>
-                <c:out value="${person.name}"/>
-            </td>
+            <%--<td>--%>
+                <%--<c:out value="${person.id}"/>--%>
+            <%--</td>--%>
+            <%--<td>--%>
+                <%--<c:out value="${person.name}"/>--%>
+            <%--</td>--%>
+                <td>
+                   ${person.id}
+                </td>
+                <td>
+                    ${person.name}
+                </td>
             <%--<td>--%>
                 <%--<a href="<c:url value="/delete/${user.id}"/>" >Delete user</a>--%>
             <%--</td>--%>
