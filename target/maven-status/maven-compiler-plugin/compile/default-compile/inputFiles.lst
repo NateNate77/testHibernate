@@ -1,9 +1,3 @@
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\configs\SpringWebAppInitializer.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\configs\WebMvcConfig.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\testHibernate\model\Person.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\Main.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\testHibernate\dao\PersonDAO.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\testHibernate\jdbc\JDBCExample.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\configs\AppConfiguration.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\testHibernate\config\HibernateConfig.java
-C:\Users\Chekireva\Documents\HelloSpringAnnotation\src\main\java\testHibernate\controller\HelloSpringMVC.java
+C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\model\Person.java
+C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\controller\HelloSpringMVC.java
+C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\dao\PersonDAO.java
