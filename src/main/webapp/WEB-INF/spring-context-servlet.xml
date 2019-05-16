@@ -14,7 +14,13 @@
     <!--Это можно не раскоменчивать-->
     <!--<context:annotation-config/>-->
 
+<<<<<<< HEAD
     <!--С этими двумя бинами работает нормально-->
+=======
+    <!--<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">-->
+        <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+    <!--</bean>-->
+>>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
 
     <!--<jdbc:embedded-database id="test" type="H2">-->
         <!--<jdbc:script location="classpath:schema.sql"/>-->

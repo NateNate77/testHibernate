@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Chekireva
@@ -20,6 +21,7 @@
 
 </head>
 <body>
+<<<<<<< HEAD
 <%--<h1>${greeting}</h1>--%>
 <br>
 <h3>Persons List</h3>
@@ -29,6 +31,9 @@
         <th>Person ID</th>
         <th>Person Name</th>
     </tr>
+=======
+<h1>${greeting}</h1>
+>>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
 
     <c:forEach var="person" items="${persons}">
         <tr>
@@ -38,12 +43,20 @@
             <%--<td>--%>
                 <%--<c:out value="${person.name}"/>--%>
             <%--</td>--%>
+<<<<<<< HEAD
 
                 <td>
                         ${person.id}
                 </td>
                 <td>
                         ${person.name}
+=======
+                <td>
+                   ${person.id}
+                </td>
+                <td>
+                    ${person.name}
+>>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
                 </td>
             <%--<td>--%>
                 <%--<a href="<c:url value="/delete/${user.id}"/>" >Delete user</a>--%>

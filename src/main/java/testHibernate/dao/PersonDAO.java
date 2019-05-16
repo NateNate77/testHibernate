@@ -36,6 +36,7 @@ public class PersonDAO {
 
     public List<Person> getAllPersons() throws SQLException, Exception {
 
+<<<<<<< HEAD
 //        em.createNativeQuery("create table if not exists person\n" +
 //                "(\n" +
 //                "   id integer not null,\n" +
@@ -53,6 +54,18 @@ public class PersonDAO {
                   .setParameter(2, "Ravi").executeUpdate();
 
 
+=======
+        em.createNativeQuery("create table if not exists person\n" +
+                "(\n" +
+                "   id integer not null,\n" +
+                "   name varchar(255) not null,\n" +
+                "   primary key(id)\n" +
+                ");").executeUpdate();
+
+        em.createNativeQuery("INSERT INTO person (id, name) VALUES (?,?)")
+                .setParameter(1, 10001)
+                .setParameter(2, "Renn").executeUpdate();
+>>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
 
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Person> q = cb.createQuery(Person.class);

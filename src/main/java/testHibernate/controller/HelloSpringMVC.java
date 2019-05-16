@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+<<<<<<< HEAD
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
@@ -16,6 +17,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+=======
+import testHibernate.jdbc.JDBCExample;
+import testHibernate.model.Person;
+
+import java.util.List;
+//import service.PersonService;
+>>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
 
 @Controller
 @RequestMapping("/hello")
@@ -73,8 +81,14 @@ public class HelloSpringMVC {
     @RequestMapping(method = RequestMethod.GET)
     public String hello(Model model) {
 
+<<<<<<< HEAD
+=======
+        model.addAttribute("greeting", "Hello Spring MVC");
+//        model.addAttribute("persons", personService.getAllUsers() );
+>>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
         try {
-            model.addAttribute("persons", personDAO.getAllPersons());
+            List<Person> list = personDAO.getAllPersons();
+            model.addAttribute("persons", list);
         } catch (Exception e) {
             e.printStackTrace();
         }
