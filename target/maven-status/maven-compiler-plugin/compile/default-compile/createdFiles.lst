@@ -1,15 +1,5 @@
-<<<<<<< HEAD
-testHibernate\dao\PersonDAO.class
 testHibernate\model\Person.class
 testHibernate\controller\HelloSpringMVC.class
-=======
-Main.class
-configs\WebMvcConfig.class
-testHibernate\jdbc\JDBCExample.class
-configs\AppConfiguration.class
-testHibernate\controller\HelloSpringMVC.class
 testHibernate\dao\PersonDAO.class
-configs\SpringWebAppInitializer.class
-testHibernate\config\HibernateConfig.class
-testHibernate\model\Person.class
->>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
+testHibernate\AppInitializator.class
+testHibernate\ApplicationListenerBean.class

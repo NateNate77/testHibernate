@@ -1,15 +1,5 @@
-<<<<<<< HEAD
+C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\ApplicationListenerBean.java
 C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\model\Person.java
 C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\controller\HelloSpringMVC.java
+C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\AppInitializator.java
 C:\Users\Chekireva\Documents\hibernate\src\main\java\testHibernate\dao\PersonDAO.java
-=======
-C:\repo\testHibernate\src\main\java\configs\AppConfiguration.java
-C:\repo\testHibernate\src\main\java\testHibernate\model\Person.java
-C:\repo\testHibernate\src\main\java\configs\WebMvcConfig.java
-C:\repo\testHibernate\src\main\java\testHibernate\controller\HelloSpringMVC.java
-C:\repo\testHibernate\src\main\java\configs\SpringWebAppInitializer.java
-C:\repo\testHibernate\src\main\java\testHibernate\dao\PersonDAO.java
-C:\repo\testHibernate\src\main\java\testHibernate\jdbc\JDBCExample.java
-C:\repo\testHibernate\src\main\java\testHibernate\config\HibernateConfig.java
-C:\repo\testHibernate\src\main\java\Main.java
->>>>>>> 0cf70acff711824ca7ef551564833f522108ff7a
