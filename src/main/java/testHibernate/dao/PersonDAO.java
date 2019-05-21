@@ -1,40 +1,32 @@
 package testHibernate.dao;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
-import testHibernate.model.Person;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
-import java.sql.SQLException;
-import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+import testHibernate.model.Person;
 
 @Component
 public class PersonDAO {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(PersonDAO.class);
-
-
-    @PersistenceContext(unitName = "testHibernate.person_catalog")
+//    @PersistenceContext(unitName = "testHibernate.person_catalog")
+    @PersistenceContext
     private EntityManager em;
 
-      @Transactional(value = "txManager")
-
-    public List<Person> getAllPersons() throws SQLException, Exception {
+    public List<Person> getAllPersons() {
 
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Person> q = cb.createQuery(Person.class);
         Root<Person> root = q.from(Person.class);
         q.select(root);
-        LOGGER.info("SELECT FROM TABLE PERSON!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-
-        return em.createQuery(q).getResultList();
+        List<Person> personList = em.createQuery(q).getResultList();
+        return personList;
     }
 
 }

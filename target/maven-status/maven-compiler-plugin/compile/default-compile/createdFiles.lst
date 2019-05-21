@@ -1,6 +1,5 @@
 testHibernate\MyApp.class
 testHibernate\model\Person.class
 testHibernate\controller\HelloSpringMVC.class
-testHibernate\DBUtils.class
 testHibernate\dao\PersonDAO.class
 testHibernate\ApplicationListenerBean.class
